@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <aside></aside>
+  <div class="container">
+    <header>
+      <h1>Magic 8 ball</h1>
+      <h2>Put your name and question, than tap the ball, to get the answer</h2>
+    </header>
+    <div class="ball" id="ball">
+      <div class="display" id="display">
+        <div class="showHide">
+          <p class="eighth" id="eighth">8</p>
+          <p class="answers" id="answers"></p>
+        </div>
+      </div>
+    </div>
+    <div class="questions">
+      <form action="">
+        <input type="text" class="form-input" placeholder="Name" id="name" onclick="removeError(this)">
+        <input type="text" class="form-input" placeholder="Question" id="question" onclick="removeError(this)">
+      </form>
+    </div>
+  </div>
+  <aside>
+    <div class="title">
+      <h3>&#8470;</h3>
+      <h3>Name</h3>
+      <h3>Question</h3>
+      <h3>Answer</h3>
+    </div>
+    <div class="results" id="results">
+      
+    </div>
+  </aside>
+  <script src="./script.js"></script>
+</body>
+
+</html>
